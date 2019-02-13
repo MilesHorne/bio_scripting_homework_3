@@ -1,9 +1,13 @@
 #!/bin/bash
 
+set -o xtrace
+#set -o noexec
+#set -o errexit
+
 # Reading data from the user's input
-read - p 'Enter a : ' a
-           read
-    - p 'Enter b : ' b
+read - p 'Enter a : a'
+
+read - p 'Enter b : ' b
 
              add
     = $((a + b))
@@ -39,3 +43,5 @@ read - p 'Enter a : ' a
 )
 echo What
 was the default value \ of c if its value is now $c\?
+
+
